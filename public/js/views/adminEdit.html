@@ -1,0 +1,50 @@
+<div class="adminContainer">
+  <div class="adminStyle">
+    <div class="adminBtns">
+      <button class="adminButton" g-click="logout()">logout</button>
+      <button class="adminButton" ui-sref="adminEdit">Edit Existing Cohorts</button>
+      <button class="adminButton" ui-sref="admin">Add New Cohort</button>
+    </div>
+
+<div class="edit">
+  <div class="classCont">
+    <div class="classEdit box box4 shadow4" ng-repeat="cohort in cohorts track by cohort._id">
+
+
+      <h2 class="cohortInfo">{{cohort.title}}<br/>{{cohort.cohortData.locationString}}</h2>
+      <br/>
+      <input class="typeInput" placeholder="edit cohort title (DM#)" ng-model="editCohort.title">
+      <br/>
+       Start: {{cohort.startBootcamp}}
+      <input class="typeInput" placeholder="Edit Start Date" type="date" ng-model="editCohort.startBootcamp"><br/>
+      End: {{cohort.endBootcamp}}
+      <input class="typeInput" placeholder="Edit End Date" type="date" ng-model="editCohort.endBootcamp"></br>
+      <br/>
+      Students:
+      <div class="studentEdit" ng-repeat="student in cohort.students">
+        <input class="typeInput" value="{{student.name}}" ng-model= "student.name"><br/>
+        Before DevMtn: {{student.homeData.locationString}}<br/>
+        <home-search home-data="student.homeData" class="typeInput"></home-search></br>
+        After DevMtn: {{student.afterData.locationString}}<br/>
+        <after-search after-data="student.afterData" class="typeInput"></after-search></br>
+        Job: {{student.job}}<br/>
+        <select class="selectJob" ng-model="student.job">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <hr/>
+      </div>
+
+<button class="adminButton" ng-click="editCohortData(editCohort, cohort)">Submit Changes</button>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+  <!-- ///end admin container/// -->
+</div>

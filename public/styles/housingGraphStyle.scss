@@ -1,0 +1,44 @@
+@import 'variables';
+
+
+h2 {
+    color:$graphPrimaryColor;
+    text-align: center;
+    font-family: $graphFont;
+}
+.graph {
+  background-image: $backgroundImage;
+  #chart {
+    display:block;
+    margin: auto;
+    text-align: center;
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #777;
+    }
+    .axis text {
+        font-family: $graphFont;
+        font-size: 13px;
+        fill: $graphSecondaryColor;
+    }
+    .tick {
+      stroke-dasharray: 1, 2;
+    }
+    .graph {
+      margin: auto;
+      text-align: center;
+    }
+    .legend {
+      font-size: 12px;
+    }
+    rect {
+      stroke-width: 2;
+    }
+  }
+}
+@media (max-width: 1000px) {
+    #chart {
+        width: 100%;
+    }
+}

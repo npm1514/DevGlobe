@@ -1,0 +1,701 @@
+.adminContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./../images/wood_1.png");
+  color: white;
+  font-family: "Josefin Slab"; }
+  .adminContainer .adminBtns {
+    width: 100%;
+    text-align: center;
+    margin: 1em; }
+  .adminContainer .adminButton {
+    font-size: 1em;
+    color: #090311;
+    text-shadow: 1px 1px #f9f9f9;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 10px;
+    outline: 0; }
+  .adminContainer .adminButton:hover {
+    background: #25AAE1;
+    color: #f8f8f8;
+    text-shadow: none; }
+  .adminContainer .adminStyle {
+    margin: auto;
+    padding: 5%;
+    display: flex; }
+    .adminContainer .adminStyle .cohort {
+      flex: 1; }
+    .adminContainer .adminStyle .students {
+      flex: 1;
+      margin-left: 1em; }
+    .adminContainer .adminStyle hr {
+      display: block;
+      margin: 1em auto;
+      border-style: inset;
+      border-width: 2px; }
+  .adminContainer .typeInput {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 0.5em;
+    height: 5%;
+    font-size: 1.1em; }
+  .adminContainer .newStudents .anotherDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .adminContainer .newStudents .anotherDiv .studentDiv {
+      min-width: 40vw;
+      padding: 1em;
+      margin: 0.5em;
+      flex: 1; }
+  .adminContainer .newStudents .selectStudents {
+    width: 50%;
+    margin: 0;
+    outline: none;
+    font-size: 1.3em; }
+  .adminContainer .newStudents .studentNumLabel {
+    margin: 0;
+    font-size: 1.3em; }
+  .adminContainer .newStudents .selectJob {
+    margin: 10px; }
+  .adminContainer .edit {
+    color: #1E1D1D; }
+    .adminContainer .edit .cohortInfo {
+      color: #1E1D1D; }
+    .adminContainer .edit .classCont {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+    .adminContainer .edit .classEdit {
+      min-width: 40vw;
+      flex: 1;
+      padding: 1em;
+      margin: 0.5em;
+      background-color: rgba(193, 206, 212, 0.49); }
+      .adminContainer .edit .classEdit .shadow4 {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset; }
+    .adminContainer .edit .studentEdit {
+      margin: 1em; }
+
+.finance {
+  background-image: url("./../images/wood_1.png"); }
+  .finance h1 {
+    margin: 0;
+    padding: 20px 20px 30px;
+    text-align: center;
+    font-family: "Josefin Slab";
+    color: #C1CED4;
+    font-size: 3em; }
+  .finance h2 {
+    margin: 0;
+    padding: 15px 15px 30px;
+    text-align: center;
+    font-family: "Josefin Slab";
+    color: #25AAE1;
+    font-size: 2.2em; }
+  .finance .donutWrapper {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center; }
+    .finance .donutWrapper #donut {
+      width: 29rem;
+      height: 29rem; }
+      .finance .donutWrapper #donut text {
+        font-family: "Josefin Slab";
+        font-size: 7rem;
+        font-weight: 400;
+        line-height: 16rem;
+        fill: #25AAE1; }
+      .finance .donutWrapper #donut h2 {
+        color: #25AAE1;
+        font-size: 2em;
+        font-family: "Josefin Slab";
+        margin-bottom: 25px;
+        margin-right: 50px;
+        padding-right: 110px; }
+    .finance .donutWrapper #donut2 {
+      width: 20rem;
+      height: 29rem; }
+      .finance .donutWrapper #donut2 text {
+        font-family: "Josefin Slab";
+        font-size: 7rem;
+        font-weight: 400;
+        line-height: 16rem;
+        fill: #25AAE1; }
+      .finance .donutWrapper #donut2 h2 {
+        color: #25AAE1;
+        font-size: 2em;
+        font-family: "Josefin Slab";
+        margin-bottom: 25px;
+        margin-right: 40px;
+        padding-left: 35px; }
+    .finance .donutWrapper path.color0 {
+      fill: #25AAE1; }
+    .finance .donutWrapper path.color1 {
+      fill: #C1CED4; }
+
+.employmentViewContainer {
+  background-image: url("./../images/wood_1.png");
+  height: 100%;
+  width: 100%;
+  padding: 20px; }
+  .employmentViewContainer h1 {
+    color: #C1CED4;
+    margin: 0 auto 40px;
+    padding: 10px 10px 40px;
+    font-family: "Josefin Slab";
+    font-size: 4em;
+    text-align: center; }
+  .employmentViewContainer #hiring {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center; }
+    .employmentViewContainer #hiring text {
+      font-family: "Josefin Slab";
+      font-size: 7.8rem;
+      font-weight: 400;
+      line-height: 16rem;
+      fill: #25AAE1; }
+    .employmentViewContainer #hiring h2 {
+      color: #25AAE1;
+      font-size: 4em;
+      font-family: "Josefin Slab";
+      text-align: center; }
+    .employmentViewContainer #hiring path.color0 {
+      fill: #25AAE1; }
+    .employmentViewContainer #hiring path.color1 {
+      fill: #C1CED4; }
+  .employmentViewContainer .counters {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px; }
+    .employmentViewContainer .counters .count {
+      display: inline-block; }
+      .employmentViewContainer .counters .count span {
+        margin: 20px;
+        color: #25AAE1;
+        font-family: "Josefin Slab";
+        font-size: 3.5em;
+        display: inline-block;
+        position: relative;
+        text-align: center; }
+      .employmentViewContainer .counters .count .label {
+        color: #C1CED4;
+        font-size: 2em; }
+  .employmentViewContainer .employers {
+    margin-top: 20px; }
+    .employmentViewContainer .employers h3 {
+      font-family: "Josefin Slab";
+      color: #25AAE1;
+      text-align: center;
+      font-size: 2em; }
+    .employmentViewContainer .employers h1 {
+      color: #C1CED4;
+      margin: 40px auto 20px;
+      padding: 10px 10px 20px;
+      font-family: "Josefin Slab";
+      font-size: 4em;
+      text-align: center; }
+    .employmentViewContainer .employers table {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px; }
+      .employmentViewContainer .employers table img {
+        max-width: 200px;
+        max-height: 200px;
+        padding: 20px;
+        margin-right: 25px; }
+
+
+h2 {
+  color: #25AAE1;
+  text-align: center;
+  font-family: "Josefin Slab"; }
+
+.graph {
+  background-image: url("./../images/wood_1.png"); }
+  .graph #chart {
+    display: block;
+    margin: auto;
+    text-align: center; }
+    .graph #chart .axis path,
+    .graph #chart .axis line {
+      fill: none;
+      stroke: #777; }
+    .graph #chart .axis text {
+      font-family: "Josefin Slab";
+      font-size: 13px;
+      fill: #C1CED4; }
+    .graph #chart .tick {
+      stroke-dasharray: 1, 2; }
+    .graph #chart .graph {
+      margin: auto;
+      text-align: center; }
+    .graph #chart .legend {
+      font-size: 12px; }
+    .graph #chart rect {
+      stroke-width: 2; }
+
+@media (max-width: 1000px) {
+  #chart {
+    width: 100%; } }
+
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.wrapper {
+  background-image: url("./../images/wood_1.png");
+  height: 100vh; }
+  .wrapper .infoCont {
+    background-image: url("./../images/wood_1.png");
+    width: 100%; }
+    .wrapper .infoCont .info {
+      background-image: url("./../images/wood_1.png");
+      color: #C1CED4;
+      display: block;
+      margin: auto;
+      width: 70%;
+      font-size: 1.2em;
+      font-family: "Josefin Slab"; }
+      .wrapper .infoCont .info .infoAbout {
+        text-align: center; }
+  .wrapper .landingCont {
+    padding-top: 10em;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .wrapper .landingCont figure {
+      cursor: pointer; }
+    .wrapper .landingCont img {
+      height: 100%;
+      width: 100%;
+      opacity: 1.8; }
+    .wrapper .landingCont figure.snip0014 {
+      color: #fff;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 10px 1%;
+      min-width: 200px;
+      height: 220px;
+      max-width: 260px;
+      width: 100%;
+      background: transparent;
+      text-align: center; }
+    .wrapper .landingCont figure.snip0014 * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .wrapper .landingCont figure.snip0014 img {
+      max-width: 100%;
+      opacity: 1;
+      width: 100%;
+      -webkit-transition: opacity 0.35s;
+      transition: opacity 0.35s; }
+    .wrapper .landingCont figure.snip0014 figcaption {
+      font-size: 1.25em; }
+    .wrapper .landingCont figure.snip0014 > div {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 3em 3em;
+      width: 100%;
+      height: 100%; }
+    .wrapper .landingCont figure.snip0014 > div::before {
+      position: absolute;
+      top: 30px;
+      right: 50%;
+      bottom: 30px;
+      left: 50%;
+      border-left: 1px solid rgba(255, 255, 255, 0.8);
+      border-right: 1px solid rgba(255, 255, 255, 0.8);
+      content: '';
+      opacity: 0;
+      background-color: #ffffff;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s;
+      -webkit-transition-delay: 0.6s;
+      transition-delay: 0.6s; }
+    .wrapper .landingCont figure.snip0014 h2,
+    .wrapper .landingCont figure.snip0014 p {
+      margin: 0 0 5px;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s; }
+    .wrapper .landingCont figure.snip0014 h2 {
+      word-spacing: -0.15em;
+      font-size: 1.2em;
+      font-weight: 300;
+      text-transform: uppercase;
+      -webkit-transform: translate3d(0%, 100%, 0);
+      transform: translate3d(0%, 100%, 0);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    .wrapper .landingCont figure.snip0014 h2 span {
+      font-weight: 800; }
+    .wrapper .landingCont figure.snip0014 p {
+      font-weight: 200;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+    .wrapper .landingCont figure.snip0014 a {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      color: #ffffff; }
+    .wrapper .landingCont figure.snip0014:hover img {
+      opacity: 0.35; }
+    .wrapper .landingCont figure.snip0014:hover > div h2 {
+      opacity: 1;
+      -webkit-transform: translate3d(0%, 0%, 0);
+      transform: translate3d(0%, 0%, 0);
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    .wrapper .landingCont figure.snip0014:hover > div p {
+      opacity: 0.8;
+      -webkit-transition-delay: 0.6s;
+      transition-delay: 0.6s; }
+    .wrapper .landingCont figure.snip0014:hover > div::before {
+      background: rgba(255, 255, 255, 0);
+      left: 30px;
+      right: 30px;
+      opacity: 1;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s; }
+
+@charset "UTF-8";
+.loginCont {
+  background-image: url("./../images/wood_1.png");
+  width: 100%; }
+  .loginCont .loginStyle {
+    background-image: url("./../images/wood_1.png");
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+    color: #25AAE1;
+    height: 100vh; }
+    .loginCont .loginStyle input {
+      width: 100%;
+      margin-bottom: 10px;
+      height: 5%;
+      padding: 10px;
+      font-size: 1.1em;
+      outline-color: rgba(51, 35, 85, 0.83); }
+    .loginCont .loginStyle button {
+      font-size: 1.2em;
+      font-family: sans-serif;
+      color: #090311;
+      text-shadow: 1px 1px #f9f9f9;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.5em;
+      border-radius: 0.25em;
+      background: #f8f8f8;
+      border: 1px solid #ccc;
+      position: relative;
+      margin: 0 0 1px;
+      outline: 0; }
+    .loginCont .loginStyle ​ button:hover {
+      background: rgba(51, 35, 85, 0.31); }
+
+body {
+  background-image: url("./images/stars.jpg");
+  font-size: 1em;
+  position: relative;
+  width: 100vw;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0; }
+  body #main {
+    position: relative;
+    z-index: 1; }
+
+.mapCont {
+  background-image: url("./../images/stars.jpg");
+  width: 100%;
+  height: 100%; }
+  .mapCont .head {
+    position: fixed;
+    top: 100px;
+    padding-left: 20px;
+    width: 460px; }
+    .mapCont .head i {
+      margin-left: 5px;
+      margin-bottom: 20px; }
+    .mapCont .head h2 {
+      color: #fff;
+      font-family: "Josefin Slab";
+      margin: 0;
+      font-size: 40px;
+      padding-bottom: 10px; }
+    .mapCont .head .moreinfo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 400px;
+      height: max-content;
+      background-color: #8d8d8d;
+      opacity: .8;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      padding: 10px;
+      text-align: center; }
+    .mapCont .head h2 {
+      color: #fff;
+      font-family: "Josefin Slab";
+      margin: 0;
+      font-size: 40px; }
+    .mapCont .head p {
+      font-family: "Josefin Slab";
+      font-size: 20px;
+      font-weight: bold; }
+    .mapCont .head .infoexit {
+      position: absolute;
+      color: red;
+      top: 0;
+      right: 0;
+      margin: 30px;
+      cursor: pointer;
+      border-bottom: 2px solid red;
+      padding: 0 5px; }
+    .mapCont .head .infoexit:hover {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
+    .mapCont .head .zoom {
+      margin-left: 5px; }
+      .mapCont .head .zoom i {
+        margin: 0; }
+  .mapCont .scrollbar {
+    height: 15px;
+    text-align: center; }
+    .mapCont .scrollbar .timeplay i {
+      display: inline-block;
+      float: left;
+      margin-top: 5px;
+      margin-left: 20px; }
+    .mapCont .scrollbar .timeplay h2 {
+      display: inline-block;
+      float: right;
+      color: white;
+      font-family: "Josefin Slab";
+      font-size: 2.7em;
+      margin: 0; }
+  .mapCont i {
+    color: #fff;
+    cursor: pointer; }
+  .mapCont h5 {
+    color: #fff;
+    font-family: "Josefin Slab";
+    font-size: 1em;
+    margin: 0;
+    margin-left: 5px;
+    display: inline-block; }
+  .mapCont .earth {
+    width: 100%;
+    /*location point*/
+    /*arcs*/
+    /*connect arc to shadow*/ }
+    .mapCont .earth .land {
+      fill: #5a5255;
+      stroke-opacity: 1;
+      stroke: #8d8d8d; }
+    .mapCont .earth .noclicks {
+      pointer-events: none; }
+    .mapCont .earth .point {
+      opacity: .6;
+      stroke: red; }
+    .mapCont .earth .flyin {
+      stroke-width: 1;
+      opacity: .8;
+      stroke: purple; }
+    .mapCont .earth .flyout {
+      stroke-width: 0.5;
+      opacity: .8;
+      stroke: gold; }
+    .mapCont .earth .arc {
+      stroke: black;
+      stroke-width: 0.25;
+      opacity: 0.25;
+      fill: none; }
+    .mapCont .earth .arc, .mapCont .earth .flyin, .mapCont .earth .flyout {
+      stroke-linejoin: round;
+      fill: none; }
+  .mapCont .bars {
+    width: 33%;
+    height: 100vh;
+    position: fixed;
+    top: 75px;
+    right: 0; }
+    .mapCont .bars h2 {
+      color: #fff;
+      font-family: "Josefin Slab";
+      margin: 0;
+      word-wrap: break-word;
+      min-width: 4em;
+      text-align: center;
+      font-size: 6vh; }
+    .mapCont .bars .barTitle {
+      font-size: 0.8em; }
+    .mapCont .bars .states {
+      background-color: #C1CED4; }
+    .mapCont .bars .retention {
+      background-color: #C1CED4; }
+    .mapCont .bars div {
+      clear: both;
+      float: right;
+      margin: 2vh 0;
+      padding: 2vh;
+      background-color: #25AAE1;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px; }
+    .mapCont .bars div h2 {
+      float: right;
+      width: max-content; }
+
+@media (max-width: 1200px) {
+  .mapCont .earth {
+    position: absolute;
+    top: 0;
+    left: -50vh;
+    z-index: -100; } }
+
+@media (max-width: 1000px) {
+  .mapCont .bars {
+    margin-top: 200px;
+    width: 75%; } }
+
+.main-nav {
+  text-align: center;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  width: 100%;
+  height: 2em;
+  padding-bottom: 2em;
+  transition: all .5s;
+  text-align: center;
+  background-color: #1E1D1D;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+  .main-nav .navBtns {
+    margin: auto;
+    width: 90%;
+    font-family: "Josefin Slab"; }
+  .main-nav a {
+    font-size: 1.1em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 12px;
+    padding: 1em;
+    transition: all .5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #C1CED4;
+    border: none; }
+  .main-nav a:hover {
+    display: inline-block;
+    padding: 4px;
+    transition: all 1s;
+    border: none;
+    background-color: #25AAE1;
+    color: #1E1D1D; }
+
+.main-nav-scrolled {
+  color: #1f1e1d;
+  height: 50px;
+  padding: 10px;
+  transition: all .5s;
+  opacity: .98;
+  background: rgba(75, 75, 75, 0.97); }
+  .main-nav-scrolled a {
+    color: #25AAE1;
+    font-size: .8em;
+    width: 95px;
+    padding: 1em;
+    transition: all .5s;
+    border-top: 2px solid #C1CED4;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0; }
+
+.finance h2 {
+  color: #C1CED4;
+  text-align: center;
+  font-family: "Josefin Slab"; }
+
+.pigContainer {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center; }
+  .pigContainer .pig1 {
+    float: left; }
+    .pigContainer .pig1 h2 {
+      color: #25AAE1;
+      text-align: center;
+      font-family: "Josefin Slab"; }
+    .pigContainer .pig1 #bank1 {
+      background-image: url("./../images/pig.png");
+      background-repeat: no-repeat; }
+  .pigContainer .pig2 {
+    float: right; }
+    .pigContainer .pig2 h2 {
+      color: #25AAE1;
+      text-align: center;
+      font-family: "Josefin Slab"; }
+    .pigContainer .pig2 #bank2 {
+      background-image: url("./../images/pig.png");
+      background-repeat: no-repeat; }
+
+@media (max-width: 1000px) {
+  .pigContainer {
+    flex-wrap: wrap;
+    width: auto; } }
+
+h2 {
+  color: #C1CED4;
+  text-align: center;
+  font-family: "Josefin Slab"; }
+
+.graph2 {
+  background-image: url("./../images/wood_1.png"); }
+  .graph2 #chart2 {
+    display: block;
+    margin: auto;
+    text-align: center; }
+    .graph2 #chart2 .axis path,
+    .graph2 #chart2 .axis line {
+      fill: none;
+      stroke: #777; }
+    .graph2 #chart2 .axis text {
+      font-family: "Josefin Slab";
+      font-size: 13px;
+      fill: #C1CED4; }
+    .graph2 #chart2 .tick {
+      stroke-dasharray: 1, 2; }
+    .graph2 #chart2 .graph2 {
+      margin: auto;
+      text-align: center; }
+    .graph2 #chart2 .legend {
+      font-size: 12px; }
+    .graph2 #chart2 rect {
+      stroke-width: 2; }
+
+@media (max-width: 1000px) {
+  #chart2 {
+    width: 100%; } }

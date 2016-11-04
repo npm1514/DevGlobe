@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+      <meta property="og:image:type" content="images/website.png" />
+      <meta property="og:description" content="A collaborative group project that uses the MEAN stack and D3 to graphically represent student data.">
+      <link rel="shortcut icon" href="images/world.ico" />
+      <link rel="stylesheet" href="./style.css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <title>Globe-Trotters</title>
+
+
+    <script src="plugins/d3.v3.min.js"></script>
+    <script src="plugins/queue.v1.min.js"></script>
+    <script src="plugins/topojson.v1.min.js"></script>
+    <script src="plugins/moment.js"></script>
+    <script src="plugins/datamaps.world.min.js"></script>
+  </head>
+
+  <body>
+
+  <nav-bar></nav-bar>
+
+<ui-view id="main"></ui-view>
+
+
+<!-- ////CDNS//// -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUgzAQJv4oXFNheGZseWIbvO-KLTj6HW8&libraries=places"></script>
+    <script src="./js/app.js"></script>
+
+<!-- ///Our JS Files/// -->
+
+    <script src="./js/controllers/navCtrl.js"></script>
+    <script src="./js/controllers/adminCtrl.js"></script>
+    <script src="./js/services/adminSvc.js"></script>
+    <script src="./js/controllers/financeCtrl.js"></script>
+    <script src="./js/controllers/housingGraphCtrl.js"></script>
+    <script src="./js/controllers/employmentViewCtrl.js"></script>
+    <script src="./js/controllers/employmentViewGraphCtrl.js"></script>
+    <script src="./js/controllers/employmentGraphCtrl.js"></script>
+    <script src="./js/controllers/employmentViewGraphCtrl.js"></script>
+    <script src="./js/controllers/totalExpensesGraphCtrl.js"></script>
+    <script src="./js/controllers/piggyBankCtrl.js"></script>
+    <script src="./js/services/financeSvc.js"></script>
+
+
+
+    <script src="./js/controllers/mapCtrl.js"></script>
+    <script src="./js/services/mapSvc.js"></script>
+    <script src="./js/controllers/adminCtrl.js"></script>
+    <script src="./js/controllers/loginCtrl.js"></script>
+    <script src="./js/services/loginSvc.js"></script>
+    <script src="./js/controllers/cohortSearchCtrl.js"></script>
+    <script src="./js/controllers/homeSearchCtrl.js"></script>
+    <script src="./js/controllers/afterSearchCtrl.js"></script>
+
+    <script src="./js/controllers/barsCtrl.js"></script>
+    <script src="./js/controllers/earthCtrl.js"></script>
+    <script src="./js/controllers/mainCtrl.js"></script>
+    <script src="./js/controllers/scrollbarCtrl.js"></script>
+
+
+  </body>
+</html>
