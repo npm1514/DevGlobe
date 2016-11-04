@@ -40,7 +40,6 @@ module.exports = {
     },
 
   retreive: function(req, res){
-    console.log('Reading!');
     Cohort.find({})
     .populate('students')
     .exec(function(err, result){
