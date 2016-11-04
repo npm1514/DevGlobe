@@ -10,10 +10,8 @@ var session = require('express-session');
 var passport = require('./services/passport.js');
 var userCtrl = require('./controllers/userCtrl.js');
 var financeCtrl = require('./controllers/financeCtrl.js');
-var config = require('./config.js');
 var cohortCtrl = require('./controllers/cohortCtrl.js');
 var studentCtrl = require('./controllers/studentCtrl.js');
-
 
 
 /////
@@ -25,7 +23,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 
 app.use(session({
-    secret: config.secret,
+    secret: "banana",
     resave: true,
     saveUninitialized: true
   }));

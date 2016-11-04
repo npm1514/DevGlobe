@@ -63,18 +63,8 @@ angular.module("myApp").controller("barsCtrl", function($scope, $rootScope, $ele
           if (c.students[d].job) {
             jobs++;
           }
-          if (c.students[d].afterData) {
-            if (c.cohortData.state === "Utah") {
-              if (c.students[d].afterData.state === "Utah") {
-                retentionCount++;
-              }
-            }
-            if (c.cohortData.state === "Texas") {
-              if (c.students[d].afterData.state === "Texas") {
-                retentionCount++;
-              }
-            }
-
+          if (c.students[d].afterData && (c.cohortData.state === c.students[d].afterData.state)) {
+            retentionCount++;
           }
         }
       });
